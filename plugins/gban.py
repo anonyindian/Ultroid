@@ -48,7 +48,7 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
-@telebot.on(ChatAction)
+@ultroid_cmd(ChatAction)
 async def handler(tele):
     if tele.user_joined or tele.user_added:
         try:
